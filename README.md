@@ -2,6 +2,10 @@
 
 Program used to detect if the lockscreen / screensaver is active on Linux, Mac, and Windows.
 
+## Mac setup:
+
+Requires ``pip install pyobjc-framework-Quartz``
+
 ## How do I use it?:
 
 ```py
