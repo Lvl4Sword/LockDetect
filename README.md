@@ -15,7 +15,7 @@ locked()
 
 The above will either return with ``False``, ``True``, or a ``None`` / reason tuple.
 
-You can also do one of the following if you know the exact command from the SCREENSAVERS dictionary:
+You can also do one of the following if you're running Linux and know the exact command from the SCREENSAVERS dictionary:
 
 ```py
 from lockdetect import locked
