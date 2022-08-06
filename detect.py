@@ -62,6 +62,8 @@ def detect_linux(linux_screensaver_command: typing.Optional[str] = None):
     else:
         if linux_screensaver_command in SCREENSAVERS:
             linux_screensaver_command = SCREENSAVERS[linux_screensaver_command]['command']
+        else:
+            return None, 'You need to specify a screensaver command from SCREENSAVERS or file a pull request'
     try:
         check_screensaver = subprocess.check_output(linux_screensaver_command,
                                                     stderr=subprocess.DEVNULL).decode().split()[-1]
